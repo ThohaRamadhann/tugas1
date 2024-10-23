@@ -5,18 +5,18 @@ class DashboardPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Selamat datang di Universitas Teknologi Bandung'),
+        title: Text('Selamat datang di UTB'),
       ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             SizedBox(height: 5),
-            Image.asset(
-              'assets/landing_page.jpg',  
-              width: 1200,
-              height: 500,
-              fit: BoxFit.cover,  
+            Flexible(
+              child: Image.asset(
+                'assets/landing_page.jpg',
+                fit: BoxFit.cover,
+              ),
             ),
           ],
         ),
