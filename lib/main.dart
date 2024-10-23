@@ -32,7 +32,7 @@ class _LoginPageState extends State<LoginPage> {
     String password = _passwordController.text;
 
     // Logika autentikasi sederhana
-    if (username == 'thoha' && password == 'thohar123') {
+    if (username == 'thoha' && password == 'ramadhan') {
       Navigator.push(
         context,
         MaterialPageRoute(builder: (context) => DashboardPage()),
@@ -80,7 +80,7 @@ class _LoginPageState extends State<LoginPage> {
                   ),
                   SizedBox(height: 16.0),
                   Text(
-                    'Welcome Back!',
+                    'Silahkan Login!',
                     style: TextStyle(
                       fontSize: 24,
                       fontWeight: FontWeight.bold,
